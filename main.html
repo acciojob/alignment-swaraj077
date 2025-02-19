@@ -4,39 +4,71 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        .middle {
+            margin: auto;
+            width: 60%;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+        }
+
+        td {
+            padding: 1px;
+            border: 1px solid black;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+		/* Center-aligned heading */
+            h1 {
+                text-align: center;
+            }
+    </style>
 </head>
 
 <body>
-	<header>
-        <h4 id="center-aligned">HTML Assignment #3</h4>
-    </header>
-    <main>
+	<h1>HTML Assignment #3</h1>
 
         <!-- Table 1 -->
-        <table id="table-1" class="middle">
+        <table id="table-1" class="middle" style="width:100%;hight:100%">
             <tr>
                 <td id="t11">left</td>
-                <td class="center">center</td>
-                <td class="right">right</td>
+                <td id="t12" class="center">center</td>
+                <td id="t13" class="right">right</td>
             </tr>
             <tr>
-                <td id="t12" class="center">left</td>
-                <td class="center">center</td>
-                <td class="right">right</td>
+                <td id="t11">left</td>
+                <td id="t12" class="center">center</td>
+                <td id="t13" class="right">right</td>
             </tr>
             <tr>
-                <td id="t13" class="right">left</td>
-                <td class="center">center</td>
-                <td class="right">right</td>
+                <td id="t11">left</td>
+                <td id="t12" class="center">center</td>
+                <td id="t13" class="right">right</td>
             </tr>
-        </table>
-
-        <br><br>
+        </table><br>
 
         <!-- Table 2 -->
-        <table id="table-2" class="middle">
+        <table id="table-2" class="middle" style="width:100%;hight:100%">
             <tr>
-                <td colspan="6" id="t21"></td>
+                <td id="t21" colspan="6"></td>
             </tr>
             <tr>
                 <td rowspan="4"></td>
@@ -44,13 +76,20 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>
-                <td rowspan="2" colspan="3"></td>
+                <td colspan="3"></td>
+                <td></td>
             </tr>
-            <tr></tr>
             <tr>
+                <td></td>
+                <td colspan="3"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -59,26 +98,25 @@
             <tr>
                 <td colspan="6"></td>
             </tr>
-        </table>
-
-        <br><br>
+        </table><br>
 
         <!-- Table 3 -->
-        <table id="table-3" class="middle">
-            <tr>
-                <td class="green"></td>
+        <table id="table-3" class="middle" style="width:100%;hight:100%">
+            <tr class="green">
+                <td></td>
             </tr>
             <tr>
-                <td id="t-image">
+                <td id="t-image" colspan="6" style="text-align:center">
                     <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"
-                        alt="Basketball player playing basketball in court">
+                        alt="Sample Image">
                 </td>
             </tr>
-            <tr>
-                <td class="blue"></td>
+
+
+            <tr class="blue" colspan="6">
+                <td></td>
             </tr>
         </table>
-    </main>
     <script type="text/javascript" src="./script.js">
 </script>
 
